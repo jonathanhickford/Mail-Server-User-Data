@@ -1,0 +1,5 @@
+#cloud-config
+runcmd:
+ - [ source, /home/ubuntu/.ec2_api_conf ]
+ - [ sh, /home/ubuntu/associate_elastic_ip.sh ]
+ - [ touch, /tmp/bob.txt ]
